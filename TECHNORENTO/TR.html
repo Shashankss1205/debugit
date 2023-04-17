@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image" href="D:\debugit\logo.jpeg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="TR.css">
+    <title> TechnoRento</title>
+</head>
+
+<body>
+
+
+    <!-- =============================== * navbar * ============================================ -->
+
+    <div class="header">
+        <div class="navbar">
+
+
+
+
+            <a href="TR.html">
+            <img src="D:\debugit\logo.jpeg" >
+            </a>
+
+
+
+
+
+
+            <div class="country_select" id="country">
+                <div class="select">
+                    <p id="text"> Select Your Country </p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Canada')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Canada</p>
+                    </li>
+                    <li class="option" onclick="myfunction('India')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>India</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Russia')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Russia</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Saudi Arabia')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Saudi Arabia</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Laptops, Mobile phones and More....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+
+
+
+
+            <div class="language">
+                <p id="eng_tag"> English </p>
+
+                <ul class="hin_eng">
+                    <li onclick="languageTR('English')"> English </li>
+                    <li onclick="languageTR('हिन्दी')">हिन्दी</li>
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+
+
+
+
+            <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+
+
+
+
+            <div class="profile">
+                <div class="user_img" id="user_img_id">
+                    <img src="D:\debugit\user.jpg">
+                </div>
+
+                <div class="dropdown" id="dropdownid">
+                    
+                    <div class="nameandimg">
+                        <a href="D:\debugit\user.jpg" >
+                          <img src="D:\debugit\user.jpg">
+                        </a>
+                        <p> Shashank Shekhar Singh </p>
+                    </div>
+                    
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <a href="help.html" ><p>Help</p></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Settings</p>
+                        </li>
+                        <hr>
+
+                        <li onclick="logout()">
+                            <i class="fa-solid fa-right-from-bracket" ></i>
+                            <p >Log Out</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <a href="formforrent.html">
+            <div class="selling_page">
+                <button> <i class="fa-solid fa-plus"></i>
+                    <p>RENT</p>
+                </button>
+            </div>
+        </a>    
+
+        </div>
+    </div>
+
+
+
+
+    <!-- =============================== * product * ============================================ -->
+
+
+    <div class="product">
+        <div class="First_row">
+            <div class="box">
+                <a href="p1.html">
+                    <img src="D:\debugit\Products\p1.jpg">
+                    <h2>$599.98</h2>
+                    <p>Raspberry Pi 4 Kits</p>
+                    <div class="addres_data">
+                        <p>Mechanical Department,
+                            IIT BHU,
+                            Varanasi</p>
+                        <p>One Week Ago</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p2.html">
+                <img src="D:\debugit\Products\p5.jpg">
+                <h2>  $19.99 </h2>
+                <p> 5 in 1 International Power Adapter</p>
+                <div class="addres_data">
+                    <p>Mechanical Department,
+                    IIT BHU,
+                    Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p3.html">
+                <img src="D:\debugit\Products\p9.jpg">
+                <h2>$28.99</h2>
+                <p> Meudeen Electric Air Duster</p>
+                <div class="addres_data">
+                <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p4.html">
+                <img src="D:\debugit\Products\p13.jpg">
+                <h2> $79.99 </h2>
+                <p> WiFi Projector</p>
+                <div class="addres_data">
+                <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="First_row">
+            <div class="box">
+                <a href="p5.html">
+                    <img src="D:\debugit\Products\p17.jpg">
+                    <h2> $299.99 </h2>
+                    <p> Fluentalk by Timekettle</p>
+                    <div class="addres_data">
+                        <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                        <p>One Week Ago</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p6.html">
+                    <img src="D:\debugit\Products\p21.jpg">
+                    <h2> ₹3,000 </h2>
+                    <p> Bobtot 5.1 Surround Sound Speakers Home Theater System</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p7.html">
+                    <img src="D:\debugit\Products\p25.jpg">
+                    <h2> $419.00 </h2>
+                    <p> Canon EOS 2000D (Rebel T7) DSLR Camera</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p8.html">
+                    <img src="D:\debugit\Products\p29.jpg">
+                    <h2> 	$1,158.00 </h2>
+                    <p> Lightweight and Foldable Camera Drone</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+<div class="product">
+    <div class="First_row">
+            <div class="box">
+                <a href="p1.html">
+                    <img src="D:\debugit\Products\p1.jpg">
+                    <h2>$599.98</h2>
+                    <p>Raspberry Pi 4 Kits</p>
+                    <div class="addres_data">
+                        <p>Mechanical Department,
+                            IIT BHU,
+                            Varanasi</p>
+                        <p>One Week Ago</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p2.html">
+                <img src="D:\debugit\Products\p5.jpg">
+                <h2>  $19.99 </h2>
+                <p> 5 in 1 International Power Adapter</p>
+                <div class="addres_data">
+                    <p>Mechanical Department,
+                    IIT BHU,
+                    Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p3.html">
+                <img src="D:\debugit\Products\p9.jpg">
+                <h2>$28.99</h2>
+                <p> Meudeen Electric Air Duster</p>
+                <div class="addres_data">
+                <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p4.html">
+                <img src="D:\debugit\Products\p13.jpg">
+                <h2> $79.99 </h2>
+                <p> WiFi Projector</p>
+                <div class="addres_data">
+                <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="First_row">
+            <div class="box">
+                <a href="p5.html">
+                    <img src="D:\debugit\Products\p17.jpg">
+                    <h2> $299.99 </h2>
+                    <p> Fluentalk by Timekettle</p>
+                    <div class="addres_data">
+                        <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                        <p>One Week Ago</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p6.html">
+                    <img src="D:\debugit\Products\p21.jpg">
+                    <h2> ₹3,000 </h2>
+                    <p> Bobtot 5.1 Surround Sound Speakers Home Theater System</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p7.html">
+                    <img src="D:\debugit\Products\p25.jpg">
+                    <h2> $419.00 </h2>
+                    <p> Canon EOS 2000D (Rebel T7) DSLR Camera</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p8.html">
+                    <img src="D:\debugit\Products\p29.jpg">
+                    <h2> 	$1,158.00 </h2>
+                    <p> Lightweight and Foldable Camera Drone</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+</div>
+
+
+
+
+    <!-- =============================== * Load more * ============================================ -->
+
+
+
+    <div class="Load_more">
+        <button id="Load_more_id"> Load More </button>
+
+
+
+        <div class="Load-More_products" id="Load_more_products_id">
+            <div class="First_row">
+            <div class="box">
+                <a href="p1.html">
+                    <img src="D:\debugit\Products\p1.jpg">
+                    <h2>$599.98</h2>
+                    <p>Raspberry Pi 4 Kits</p>
+                    <div class="addres_data">
+                        <p>Mechanical Department,
+                            IIT BHU,
+                            Varanasi</p>
+                        <p>One Week Ago</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p2.html">
+                <img src="D:\debugit\Products\p5.jpg">
+                <h2>  $19.99 </h2>
+                <p> 5 in 1 International Power Adapter</p>
+                <div class="addres_data">
+                    <p>Mechanical Department,
+                    IIT BHU,
+                    Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p3.html">
+                <img src="D:\debugit\Products\p9.jpg">
+                <h2>$28.99</h2>
+                <p> Meudeen Electric Air Duster</p>
+                <div class="addres_data">
+                <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p4.html">
+                <img src="D:\debugit\Products\p13.jpg">
+                <h2> $79.99 </h2>
+                <p> WiFi Projector</p>
+                <div class="addres_data">
+                <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                <p>One Week Ago</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="First_row">
+            <div class="box">
+                <a href="p5.html">
+                    <img src="D:\debugit\Products\p17.jpg">
+                    <h2> $299.99 </h2>
+                    <p> Fluentalk by Timekettle</p>
+                    <div class="addres_data">
+                        <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                        <p>One Week Ago</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p6.html">
+                    <img src="D:\debugit\Products\p21.jpg">
+                    <h2> ₹3,000 </h2>
+                    <p> Bobtot 5.1 Surround Sound Speakers Home Theater System</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p7.html">
+                    <img src="D:\debugit\Products\p25.jpg">
+                    <h2> $419.00 </h2>
+                    <p> Canon EOS 2000D (Rebel T7) DSLR Camera</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="p8.html">
+                    <img src="D:\debugit\Products\p29.jpg">
+                    <h2> 	$1,158.00 </h2>
+                    <p> Lightweight and Foldable Camera Drone</p>
+                    <div class="addres_data">
+                    <p>Mechanical Department,
+                        IIT BHU,
+                        Varanasi</p>
+                    <p>$269.99 </p>
+                    </div>
+                </a>
+            </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- =============================== * download * ============================================ -->
+
+
+    <div class="download_app">
+        <div class="download">
+            <a href="D:\debugit\user.jpg" >
+                <img src="D:\debugit\logo.jpeg" class="images">
+            </a>
+
+            <div class="text">
+                <h1> TRY THE TECHNORENTO APP</h1>
+                <p>Rent, Borrow and Find just about anything using <br>
+                    the app on your mobile.</p>
+            </div>
+            <div class="download_store">
+                <p> GET YOUR APP TODAY </p>
+                <img src="D:\debugit\OLX-Clone-part---3--main/playstore.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- =============================== * footer * ============================================ -->
+
+
+
+    <div class="Main_footer">
+        <div class="footer">
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <p> Varanasi</p>
+                <p> Kolkata</p>
+                <p>Mumbai</p>
+                <p>Chennai</p>
+                <p>pune</p>
+            </div>
+            <div class="footer_box">
+                <h2>TRENDING LOCATIONS</h2>
+                <p> Varanasi</p>
+                <p> Bhubaneshwar</p>
+                <p>Hyderabad</p>
+                <p>Chandigarh</p>
+                <p>Nashik</p>
+            </div>
+            <div class="footer_box">
+                <h2>ABOUT US</h2>
+                <p> About TECHNORENTO Group</p>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>TRPeople</p>
+            </div>
+            <div class="footer_box">
+                <h2>TR</h2>
+                <a href="help.html" ><p> Help</p></a>
+                <p>Legal & Privacy information</p>
+                <p>Blog</p>
+                <p>HEADOFFICE</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+
+
+        function logout() {
+        window.location.replace("thanks.html");
+        }
+
+
+
+        //  =============================== * navbar * ============================================
+
+        let country = document.getElementById('country');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+
+        country.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('rotate')
+        });
+        function myfunction(variable) {
+            text.innerHTML = variable;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+        });
+        function languageTR(anyone) {
+            eng_tag.innerHTML = anyone;
+        }
+
+        let user_img_id = document.getElementById('user_img_id');
+        let dropdownid = document.getElementById('dropdownid');
+
+        user_img_id.addEventListener('click', () => {
+            dropdownid.classList.toggle('block_div')
+        });
+
+
+
+        //  =============================== * Load more * ============================================
+
+
+        let Load_more_id = document.getElementById('Load_more_id');
+        let Load_more_products_id = document.getElementById('Load_more_products_id');
+
+
+        Load_more_id.addEventListener('click', () => {
+            Load_more_products_id.style = 'display:block';
+            Load_more_id.style = 'display:none'
+        });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

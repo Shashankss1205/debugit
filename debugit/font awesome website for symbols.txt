@@ -1,0 +1,7 @@
+font awesome website for symbols
+removed ad1 and 2 from site
+roted spelling wrong
+<i class="fa-sharp fa-solid fa-heart" style="color: #ff0000;"></i>    red heart
+icon for webpage title
+
+
